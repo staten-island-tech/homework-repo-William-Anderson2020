@@ -10,6 +10,8 @@
     function itemsListFlexboxCheck(item){
         if( item.textContent == 'Flexbox'){
             return item;
+        } else {
+          return false;
         }
     }
     const itemsListFlexbox = itemsListArray.filter(itemsListFlexboxCheck); //?
