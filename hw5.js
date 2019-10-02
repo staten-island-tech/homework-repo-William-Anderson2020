@@ -7,14 +7,14 @@
     
   // Filter for only the elements that contain the word 'Flexbox' hint use textContent (filter method)
 
-    function itemsListFlexboxCheck(item){
-        if( item.textContent == 'Flexbox'){
-            return item;
-        } else {
-          return false;
-        }
+    function checkFilter(){
+      item => item.textContent.includes('Flexbox');
     }
-    const itemsListFlexbox = itemsListArray.filter(itemsListFlexboxCheck); //?
+
+    const itemsListFlexbox = itemsListArray.filter();
+
+
+    // const itemsListFlexbox = itemsListArray.filter(itemsListFlexbox.textContent == 'Flexbox'); //?
     console.log(itemsListFlexbox);
 
   // map down to a list of time strings Hint look up dataset mdn and think 'time'... you will need to create a new variable called filtered 
