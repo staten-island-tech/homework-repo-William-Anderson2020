@@ -32,3 +32,10 @@
     })
 
     console.log(itemsListTimestampSeconds);
+
+    const itemsListTimestampTotal = itemsListTimestampSeconds.reduce((accumulator , currentValue) => accumulator + currentValue);
+    console.log (itemsListTimestampTotal);
+
+    const numbers = [3, 62, 234, 7, 23, 74, 23, 76, 92];
+    const numbersFiltered = numbers.map(num => num > 70);
+    console.log(numbersFiltered);
